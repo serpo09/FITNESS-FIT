@@ -1,0 +1,383 @@
+@media (max-width: 1024px) {
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    .navigation-wrap .nav-link {
+        font-size: 0.9rem;
+    }
+    .navbar-brand .brand_name {
+        font-size: 1.9rem;
+    }
+    #aboutus .main-button {
+        margin-bottom: 4.4rem;
+    }
+    #courses .wave_line {
+        margin-bottom: 2rem;
+    }
+    #blog h1 {
+        font-size: 4rem;
+    }
+    #blog h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navigation-wrap .navbar-toggler span i {
+        color: var(--white-color);
+    }
+    .navigation-wrap {
+        text-align: right;
+        background-color: var(--black-color);
+    }
+    .navigation-wrap .dropdown-menu {
+        background-color: var(--black-color);
+        color: var(--white-color);
+    }
+    #home .carousel-caption {
+        top: 10rem;
+    }
+    #aboutus .main-button {
+        margin-bottom: 4rem;
+    }
+    #courses h1 {
+        font-size: 4rem;
+    }
+    #courses h2 {
+        font-size: 2.3rem;
+    }
+    #courses h4 {
+        font-size: 1.5rem;
+    }
+    #courses p {
+        font-size: 1rem;
+    }
+    #courses .main-button {
+        width: 120px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
+    #courses .courses_bannertwo .banner-btn {
+        bottom: 12rem;
+    }
+    #courses .wave_line {
+        margin-bottom: 0rem;
+    }
+    #trainers .trainer_container .main-button {
+        width: 120px;
+        height: 45px;
+        font-size: 0.7rem;
+    }
+    #schedule .schedule_line {
+        margin-bottom: 9rem;
+    }
+    #blog h1 {
+        font-size: 4rem;
+    }
+    #blog h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 3rem;
+    }
+    #home .carousel-caption {
+        padding: -5rem auto;
+    }
+    #home .carousel-caption h1 {
+        font-size: 1.1rem;
+    }
+    #home .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    .carousel-caption h1 {
+        font-size: 0.6rem;
+        line-height: 0.5;
+        color: var(--white-color);
+    }
+    #home #calisCarousel {
+        padding: 13px 0;
+    }
+    .navigation-wrap .navbar-brand .brand_name {
+        font-size: 1rem;
+    }
+    .carousel-caption h1 {
+        font-size: 1rem;
+        padding-top: 40px;
+        line-height: 1.4;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    #home .carousel-caption {
+        top: 2rem;
+    }
+    /* About us  */
+    #aboutus h1 {
+        font-size: 3.5rem;
+    }
+    .main-button {
+        width: 120px;
+        height: 35px;
+    }
+    #contact h1 {
+        font-size: 3.5rem;
+    }
+    /* courses */
+    #courses .main-button {
+        width: 130px;
+        height: 45px;
+    }
+    #courses h1 {
+        font-size: 3rem;
+    }
+    #courses h2 {
+        font-size: 2rem;
+    }
+    #courses h4 {
+        font-size: 1.4rem;
+    }
+    #courses p {
+        font-size: 0.9rem;
+    }
+    #courses .courses_banner:nth-child(1) .banner-btn {
+        bottom: 13rem;
+    }
+    #courses .courses_bannertwo .banner-btn {
+        bottom: 12rem;
+    }
+    #courses .wave_line {
+        margin-bottom: 0rem;
+    }
+    #trainers .trainer_container .main-button {
+        width: 120px;
+        height: 45px;
+        font-size: 0.7rem;
+    }
+    #accordian h1 {
+        font-size: 3rem;
+    }
+    #contact h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+    #contact .icon {
+        display: none;
+    }
+    #contact .main-button {
+        width: 130px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 430px) {
+    .carousel-caption h1 {
+        font-size: 0.6rem;
+        line-height: 0.5;
+        color: var(--white-color);
+    }
+    #home #calisCarousel {
+        padding: 13px 0;
+    }
+    .navigation-wrap .navbar-brand .brand_name {
+        font-size: 1rem;
+    }
+    .carousel-caption h1 {
+        font-size: 1rem;
+        padding-top: 40px;
+        line-height: 1.4;
+    }
+    .carousel-caption p {
+        font-size: 0.5rem;
+    }
+    #home .carousel-caption {
+        top: 0rem;
+    }
+    /* About us  */
+    #aboutus h1 {
+        font-size: 3.5rem;
+    }
+    .main-button {
+        width: 120px;
+        height: 35px;
+    }
+    #courses .main-button {
+        width: 120px;
+        height: 35px;
+    }
+    #courses h1 {
+        font-size: 3rem;
+    }
+    #courses h2 {
+        font-size: 2rem;
+    }
+    #courses h4 {
+        font-size: 1.4rem;
+    }
+    #courses p {
+        font-size: 0.9rem;
+    }
+    #courses .courses_banner:nth-child(1) .banner-btn {
+        bottom: 13rem;
+    }
+    #courses .courses_bannertwo .banner-btn {
+        bottom: 12rem;
+    }
+    #courses .wave_line {
+        margin-bottom: 0rem;
+    }
+    #trainers h1 {
+        font-size: 2.8rem;
+    }
+    #trainers h2 {
+        font-size: 1.8rem;
+    }
+    #schedule h1 {
+        font-size: 2.5rem;
+    }
+    #schedule h2 {
+        font-size: 2rem;
+    }
+    #schedule .schedule_line {
+        margin-bottom: 2rem;
+    }
+    #blog h1 {
+        font-size: 2.8rem;
+    }
+    #blog h2 {
+        font-size: 1.8rem;
+    }
+    #accordian h1 {
+        font-size: 2.8rem;
+    }
+    #contact h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    #contact .icon {
+        width: 55px;
+        height: 55px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption h1 {
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+    .carousel-caption p {
+        font-size: 0.6rem;
+    }
+    .main-button {
+        width: 120px;
+        height: 35px;
+    }
+    #courses .main-button {
+        width: 100px;
+        height: 35px;
+        font-size: 0.6rem;
+        color: var(--black-color);
+    }
+    #courses h1 {
+        font-size: 2.8rem;
+    }
+    #courses h2 {
+        font-size: 1.8rem;
+    }
+    #courses h4 {
+        font-size: 1.4rem;
+    }
+    #courses p {
+        font-size: 0.9rem;
+    }
+    #courses .courses_bannertwo:nth-child(1) .banner-btn {
+        bottom: 13rem;
+    }
+    #courses .courses_bannertwo .banner-btn {
+        bottom: 11rem;
+    }
+    #courses .wave_line {
+        margin-bottom: 0rem;
+    }
+    #trainers h1 {
+        font-size: 2.8rem;
+    }
+    #trainers h2 {
+        font-size: 1.8rem;
+    }
+    #blog h1 {
+        font-size: 2.8rem;
+    }
+    #blog h2 {
+        font-size: 1.8rem;
+    }
+    #contact h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+}
+
+
+/* Exceptional Case */
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 1rem;
+    }
+    .navigation-wrap .navbar-brand .brand_name {
+        font-size: 0.8rem;
+    }
+    .carousel-caption h1 {
+        font-size: 0.6rem;
+        line-height: 1.2;
+    }
+    .carousel-caption p {
+        font-size: 0.1rem;
+    }
+    .carousel-caption .main-button {
+        width: 84px;
+        height: 24px;
+        font-size: 0.7rem;
+    }
+    #aboutus h1 {
+        font-size: 2.5rem;
+    }
+    #aboutus .main-button {
+        width: 110px;
+        height: 35px;
+        font-size: .7rem;
+    }
+    #courses h1 {
+        font-size: 2.5rem;
+    }
+    #courses h2 {
+        font-size: 1.3rem;
+    }
+    #courses h4 {
+        font-size: 0.7rem;
+    }
+    #courses p {
+        font-size: 0.5rem;
+    }
+    #courses .main-button {
+        width: 50px;
+        height: 20px;
+        font-size: 0.4rem;
+        color: var(--black-color);
+    }
+    #courses .banner-btn {
+        bottom: 11rem;
+    }
+    #courses .courses_banner:nth-child(1) .banner-btn {
+        bottom: 11rem;
+    }
+}

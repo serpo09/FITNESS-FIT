@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Fit</title>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font icons link -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- AOS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FAV icon -->
+    <link rel="shortcut icon" href="img/pull.jpeg" type="image/x-icon">
+
+
+    <style type="text/css">
+        .scroll {
+            background-color: #00000091;
+            box-shadow: 0 8px 10px #21252957;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="fw-bolder text-light brand_name">FITNESS FIT</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#calisnavbar">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="calisnavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">COURSES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="blog.html">
+                                BLOG
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" tabindex="-1">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- END OF NAVIGATION BAR -->
+
+    <!-- CAROUSEL -->
+    <section id="home">
+        <div id="calisCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#calisCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#calisCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#calisCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/bg1.png" alt="background-image" class="d-block w-100">
+                    <div class="carousel-caption d-block" data-aos="fade-right">
+                        <h1>WANT TO BE IN THE BEST SHAPE OF YOUR LIFE ?</h1>
+                        <p>LET'S BEGIN THE JOURNEY</p>
+                        <div class="row justify-content-center">
+                            <a href="#" type="button" class="main-button" data-bs-toggle="modal"
+                                data-bs-target="#calismodal">SIGN UP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bg2.png" alt="background-image2" class="d-block w-100">
+                    <div class="carousel-caption d-block" data-aos="fade-right">
+                        <h1>WANT TO BE IN THE BEST SHAPE OF YOUR LIFE ?</h1>
+                        <p>LET'S BEGIN THE JOURNEY</p>
+                        <div class="row justify-content-center">
+                            <a href="#" type="button" class="main-button" data-bs-toggle="modal"
+                                data-bs-target="#calismodal">SIGN UP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bg3.png" alt="background-image3" class="d-block w-100">
+                    <div class="carousel-caption d-block" data-aos="fade-right">
+                        <h1>WANT TO BE IN THE BEST SHAPE OF YOUR LIFE ?</h1>
+                        <p>LET'S BEGIN THE JOURNEY</p>
+                        <div class="row justify-content-center">
+                            <a href="#" type="button" class="main-button" data-bs-toggle="modal"
+                                data-bs-target="#calismodal">SIGN UP</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#calisCarousel"
+                    data-bs-slide="prev">
+                    <span class="text-light fs-4 fw-bold">P<br>R<br>E<br>V</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#calisCarousel"
+                    data-bs-slide="next">
+                    <span class="fs-4 text-light fw-bold">N<br>E<br>x<br>T</span>
+                </button>
+            </div>
+            <div class="modal fade mt-5" id="calismodal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">SIGN UP</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="aboutus">
+        <div class="container mt-5 p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center text-light" data-aos="fade-up"> 
+                    <h1>ABOUT US</h1>
+                </div>
+            </div>
+            <div class="row py-5 g-4">
+                <div class="col-sm-6">
+                    <img src="img/pic2.jpeg" alt="pic-1" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-light about_line text-justified">
+                    <p>Calisthenics might be the word your grandfather used for physical exercise. This type of workout
+                        started cropping up in grade schools in the late 19th and early 20th centuries. These
+                        low-resistance
+                        exercises use your body weight rather than other equipment.
+
+                        You do many repetitions of each move to help build muscle while improving how long you can keep
+                        the
+                        exercise going. Calisthenics can be a warm-up or cool-down for another fitness routine or sport.
+                        Or
+                        it can be its own workout.
+
+                        Calisthenics are making a big comeback in workouts around the world. There are lots of ways
+                        these
+                        moves can benefit you.
+                    </p>
+                    <div class="row justify-content-center">
+                        <a href="about.html" type="button" class="main-button">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,256L1440,64L1440,320L0,320Z"></path>
+        </svg>
+    </section>
+    <!-- END OF ABOUTUS -->
+
+    <!-- START OF COURSES -->
+    <section id="courses">
+        <div class="container-fluid p-5">
+            <div class="container p-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-start">
+                        <h1>OUR COURSES</h1>
+                        <h2>WE HELP YOU TO NOT ONLY LOOK<br>STRONG BUT MAKE YOU <span style="color: var(--primary-color); font-family: Orbitron, sans-serif;">ACTUALLY STRONG</span> !</h2>
+                    </div>
+                </div>
+                <div class="row mt-5 g-4">
+                    <div class="col-sm-4 courses_banner">
+                        <div class="card bg-dark text-light text-center position-relative border-0">
+                            <a href="courses.html" class="course_img">
+                                <img src="img/push3.jpeg" alt="Push-img" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title pt-3">
+                                    <h4>PUSH WORKOUT</h4>
+                                </div>
+                                <div class="card-text">
+                                    <p>FOCUS ON CHEST AND PUSHING STRENGHT</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center banner-btn">
+                                <a href="courses.html" type="button" class="main-button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4  courses_banner">
+                        <div class="card bg-dark text-light text-center position-relative border-0">
+                            <a href="courses.html" class=" course_img">
+                                <img src="img/pull.jpeg" alt="Push-img" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title pt-3">
+                                    <h4>PULL WORKOUT</h4>
+                                </div>
+                                <div class="card-text">
+                                    <p>FOCUS ON BACK AND PULLING STRENGHT</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center banner-btn">
+                                <a href="courses.html" type="button" class="main-button">READ MORE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-4 courses_banner">
+                        <div class="card bg-dark text-light text-center position-relative border-0">
+                            <a href="courses.html" class="course_img">
+                                <img src="img/legs.jpeg" alt="Push-img" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title pt-3">
+                                    <h4>LEG WORKOUT</h4>
+                                </div>
+                                <div class="card-text">
+                                    <p>FOCUS ON LEGS AND STRENGHT</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center banner-btn">
+                                <a href="courses.html" type="button" class="main-button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 g-4 justify-content-center wave_line">
+                    <div class="col-sm-5 courses_bannertwo">
+                        <div class="card bg-dark text-light text-center position-relative border-0">
+                            <a href="courses.html" class="course_img">
+                                <img src="img/core/core3.jpeg" alt="Core-img" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title pt-3">
+                                    <h4>CORE WORKOUT</h4>
+                                </div>
+                                <div class="card-text">
+                                    <p>FOCUS ON ABS AND CORE STRENGHT</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center banner-btn">
+                                <a href="courses.html" type="button" class="main-button">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5  courses_bannertwo">
+                        <div class="card bg-dark text-light text-center position-relative border-0">
+                            <a href="courses.html" class=" course_img">
+                                <img src="img/cardio.jpeg" alt="Push-img" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title pt-3">
+                                    <h4>CARDIO</h4>
+                                </div>
+                                <div class="card-text">
+                                    <p>FOCUSES ON YOUR ENDURANCE</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center banner-btn">
+                                <a href="courses.html" type="button" class="main-button">READ MORE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#000" fill-opacity="1" d="M0,256L1440,64L1440,320L0,320Z"></path>
+        </svg>
+    </section>
+    <!-- END OF COURSES -->
+
+    <!-- OUR TRAINERS SECTIONS -->
+    <section id="trainers">
+        <div class="container p-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <h1 data-aos="fade-up">OUR <span>TRAINERS</span></h1>
+                    <h2 data-aos="fade-up" data-aos-duration="2500">BEST TRAINERS AROUND THE WORLD</h2>
+                </div>
+            </div>
+            <div class="row my-5 g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 trainer_container">
+                    <a href="about.html">
+                        <img src="img/chris.jpeg" alt="Chris Heria" class="img-fluid"
+                            style="height: 480px; clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+                    </a>
+                    <div class="trainer-info text-center">
+                        <h3>Chris Heria</h3>
+                        <p>BODY WEIGHT TRAINER</p>
+                        <div class="row justify-content-center">
+                            <a href="about.html" class="main-button">know more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 trainer_container">
+                    <a href="about.html">
+                        <img src="img/frankmedrano.png" alt="frankmedrano" class="img-fluid"
+                            style="height: 480px; clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+                    </a>
+                    <div class="trainer-info text-center">
+                        <h3>Frank Medrano</h3>
+                        <p>BODY WEIGHT TRAINER</p>
+                        <div class="row justify-content-center">
+                            <a href="about.html" class="main-button">know more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 trainer_container text-center">
+                    <a href="about.html">
+                        <img src="img/anerlarosa.jpeg" alt="Ander larosa" class="img-fluid"
+                            style="height: 480px; clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);">
+                    </a>
+                    <div class="trainer-info text-center">
+                        <h3>Ander Larosa</h3>
+                        <p>BODY WEIGHT TRAINER</p>
+                        <div class="row justify-content-center">
+                            <a href="about.html" class="main-button">know more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF TRAINES SECTION -->
+
+    <!-- START OF SCHEDULE  -->
+    <section id="schedule">
+        <div class="container p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-start">
+                    <h1>WORKOUT SCHEDULE</h1>
+                    <h2>CONSISTENCY IS THE KEY!</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2 class="text-center my-4 text-dark"><span style="color: var(--primary-color);">STRENGHT</span>
+                        TRAINING</h2>
+                    <div class="table-responsive">
+                        <table class="table table-dark text-center table-bordered  align-middle">
+                            <thead>
+                                <tr style="height: 80px;" class="align-middle">
+                                    <th scope="col">#</th>
+                                    <th scope="col">MONDAY</th>
+                                    <th scope="col">TUESDAY</th>
+                                    <th scope="col">WEDNESDAY</th>
+                                    <th scope="col">THURSDAY</th>
+                                    <th scope="col">FRIDAY</th>
+                                    <th scope="col">SATURDAY</th>
+                                    <th scope="col">SUNDAY</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height: 80px;">
+                                    <th scope="row">BEGINNER LEVEL</th>
+                                    <td>PUSH WORKOUT</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                    <td>LEG WORKOUT</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                    <td>PULL DAY</td>
+                                    <td>CARDIO</td>
+                                    <td rowspan="3">CORE WORKOUT</td>
+                                </tr>
+                                <tr style="height: 80px;">
+                                    <th scope="row">INTERMEDIATE LEVEL</th>
+                                    <td>CHEST AND SHOULDER</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                    <td>LEGS & TRICEPS</td>
+                                    <td>CARDIO</td>
+                                    <td>BACK AND BYCEPS</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                </tr>
+                                <tr style="height: 80px;">
+                                    <th scope="row">ADVANCED LEVEL</th>
+                                    <td>CHEST AND SHOULDER</td>
+                                    <td>LEGS & TRICEPS</td>
+                                    <td>BACK AND BYCEPS</td>
+                                    <td>CHEST & SHOULDER</td>
+                                    <td>LEGS AND TRICEPS</td>
+                                    <td>BACK AND BYCEPS</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row schedule_line">
+                <div class="col-12">
+                    <h2 class="text-center my-4 text-dark"><span style="color: var(--primary-color);">FAT</span>
+                        LOSS TRAINING</h2>
+                    <div class="table-responsive">
+                        <table class="table table-dark text-center table-bordered align-middle">
+                            <thead>
+                                <tr style="height: 80px;" class="align-middle">
+                                    <th scope="col">#</th>
+                                    <th scope="col">MONDAY</th>
+                                    <th scope="col">TUESDAY</th>
+                                    <th scope="col">WEDNESDAY</th>
+                                    <th scope="col">THURSDAY</th>
+                                    <th scope="col">FRIDAY</th>
+                                    <th scope="col">SATURDAY</th>
+                                    <th scope="col">SUNDAY</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height: 80px;">
+                                    <th scope="row">BEGINNER LEVEL</th>
+                                    <td>JOGGING AND ABS</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                    <td>LEG WORKOUT AND ABS</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                    <td>CARDIO</td>
+                                    <td>SKIPPING AND JOGGING</td>
+                                    <td rowspan="3">REST DAY</td>
+                                </tr>
+                                <tr style="height: 80px;">
+                                    <th scope="row">INTERMEDIATE LEVEL</th>
+                                    <td>CADIO AND JOGGING</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                    <td>LEGS AND SKIPPING</td>
+                                    <td>CARDIO</td>
+                                    <td>JOGGING AND SKIPPING</td>
+                                    <td class="bg-danger"><span><i class="fa fa-times"></i></span></td>
+                                </tr>
+                                <tr style="height: 80px;">
+                                    <th scope="row">ADVANCED LEVEL</th>
+                                    <td>CHEST & SHOULDER & CARDIO</td>
+                                    <td>LEGS & TRICEPS & SKIPPING </td>
+                                    <td>BACK AND BYCEPS</td>
+                                    <td>CHEST & SHOULDER & JOGGING</td>
+                                    <td>LEGS & TRICEPS</td>
+                                    <td>BACK & BYCEPS & CORE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#000" fill-opacity="1" d="M0,256L1440,64L1440,320L0,320Z"></path>
+        </svg>
+    </section>
+    <!-- END OF SCHEDULE -->
+
+    <!-- START OF BLOG -->
+    <section id="blog">
+        <div class="container p-5">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 text-start">
+                    <h1>OUR BLOG</h1>
+                    <h2>BUILDING A COMMUNITY FOR THENX ATHLETES</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-4 blog_info">
+                    <div class="card border-0">
+                        <a href="blog.html">
+                            <img src="img/pic9.jpg" alt="athlete" class="img-fluid">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3>TRAINING ARMS</h3>
+                                    <div class="card-text">
+                                        <p>Calisthenics has been the most effective and fun exercise to train with.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 blog_info">
+                    <div class="card border-0">
+                        <a href="blog.html">
+                            <img src="img/pic6.jpg" alt="athlete" class="img-fluid">
+                            <div class="card-body bg-dark">
+                                <div class="card-title">
+                                    <h3>TRAINING LEGS</h3>
+                                    <div class="card-text">
+                                        <p>Calisthenics has been the most effective and fun exercise to train with.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 blog_info">
+                    <div class="card border-0">
+                        <a href="blog.html">
+                            <img src="img/pic5.jpg" alt="athlete" class="img-fluid">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3>TRAINING CHEST</h3>
+                                    <div class="card-text">
+                                        <p>Calisthenics has been the most effective and fun exercise to train with.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- END OF BLOG SECTION -->
+
+    <!-- ACCORDIAN -->
+    <section id="accordian">
+        <div class="container p-5">
+            <div class="row justify-content-center my-5">
+                <div class="col-12 text-center">
+                    <h1>FREQUENT QUESTIONS</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    HOW LONG DOES IT TAKE TO GET A SHREDDED ABS BODY ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Well, it totally depends on how you train your body everyday and the main key to
+                                        achieve your dream body is by being <strong>disciplined</strong> with your meal.
+                                        Poeple ask this question very often but we should stay patience and stick to our
+                                        game plan, it takes alot of <strong>hardwork</strong> and sacrifice.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    HOW OFTEN SHOULD YOU WORKOUT ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>In the simplest of terms, you’ll need to burn more <strong>calories</strong> than
+                                        you take in to lose weight. Dieting has proven to be an effective method of
+                                        losing weight, but in order to maintain weight loss, you need to exercise.
+
+                                        How much weight you lose depends on the amount of exercise you’re willing to
+                                        commit to and how closely you stick to your diet. If you really want to see
+                                        results reflected on the scale and continue to make <strong>progress</strong>
+                                        over time, you need to commit to working out at least four to five days per
+                                        week.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    WHEN SHOULD WE WORKOUT ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Early workouts make the most of your biology and psychology, potentially
+                                        <strong>leading</strong> to better results and adherence over time. But there's
+                                        really no bad time to exercise, Hackney reiterates, and the most important thing
+                                        is finding the time to do so, whenever works for you. “If you will do it in the
+                                        morning, do it
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefour">
+                                    HOW MUCH OF SLEEP SHALL WE GET ?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>The quality of your sleep at night directly affects your mental and physical
+                                        health and how well you feel during the day. Sleep impacts your productivity,
+                                        emotional balance, brain and heart health, immune function, creativity,
+                                        vitality, and even your weight. No other activity delivers so many benefits with
+                                        so little <strong>effort</strong>!
+
+                                        When you’re scrambling to meet the demands of a busy schedule, though, or just
+                                        finding it hard to sleep at night, getting by on less hours may seem like a good
+                                        solution. But even minimal sleep loss can take a substantial toll on your mood,
+                                        energy, mental sharpness, and ability to handle stress. And over the long-term,
+                                        chronic sleep loss can wreak havoc on your mental and physical health.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF ACCORDIAN -->
+
+    <!-- START OF CONTACT -->
+    <section id="contact">
+        <div class="container pt-5 px-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h1>BE THE MEMBER OF THENX ATHLETE</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-5">
+                    <form>
+                        <!-- <label for="name" class="form-label">NAME:</label> -->
+                        <input type="text" name="name" class="form-control" placeholder="Enter Your Name">
+                        <input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+                        <input type="phone" name="phone" class="form-control" placeholder="Phone No.">
+                        <input type="message" name="message" class="form-control" placeholder="Message">
+                    </form>
+                    <div class="row justify-content-center">
+                        <a href="#" type="button" class="main-button">SEND NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center p-5">
+                <div class="col-12 text-center text-light">
+                    <p>&copy; THENX FITNESS. ALL RIGHTS RESERVED</p>
+                </div>
+                <div class="col-12 text-center text-light">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#home">
+            <i class="fa fa-angle-double-up icon"></i>
+        </a>
+    </section>
+    <!-- END OF CONTACT -->
+
+
+
+    <!--BOOTSTRAP JS LINK  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+          {
+              duration: 1500,
+              once: true,
+          }
+      );
+    </script>
+    <script type="text/javascript">
+          $(window).on('scroll',() => {
+            if ($(window).scrollTop() > 100) {
+                $('nav').addClass('scroll');
+            }
+            else {
+                $('nav').removeClass('scroll');
+            }
+        });
+    </script>
+</body>
+
+</html>

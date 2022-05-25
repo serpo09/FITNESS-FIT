@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FITNESS FIT | About Us</title>
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font icons link -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- AOS link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FAV icon -->
+    <link rel="shortcut icon" href="img/pull.jpeg" type="image/x-icon" />
+  </head>
+  <style>
+    .scroll {
+      background-color: #00000091;
+      box-shadow: 0 8px 10px #21252957;
+      color: var(--primary-color);
+    }
+    #banner .banner_bg {
+      background: linear-gradient(to bottom, rgb(0 0 0 / 75%), rgb(0 0 0 / 71%)),
+        url(aboutimg/pic1.jpg) no-repeat;
+      width: 100%;
+      background-size: cover;
+      height: 600px;
+      background-position: center;
+    }
+
+    #aboutus {
+      position: relative;
+      margin-top: 5rem;
+    }
+
+    #aboutus .about_line {
+      margin-bottom: 17rem;
+    }
+
+    #banner h1 {
+      color: var(--white-color);
+      font-weight: 600;
+      font-size: 4rem;
+    }
+
+    #banner h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+
+    #banner .banner_heading {
+      margin-top: 10rem;
+    }
+
+    #aboutus h1 {
+      color: var(--white-color);
+      font-weight: 600;
+      font-size: 6rem;
+    }
+
+    #aboutus h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+
+    #aboutus p {
+      line-height: 2rem;
+    }
+
+    #aboutus .main-button {
+      margin-top: 2rem;
+    }
+    #aboutus img {
+      border-radius: 0 5rem 0 4rem;
+    }
+
+    #testimonial {
+      background-color: var(--white-color);
+      z-index: 999;
+    }
+
+    #testimonial h1 {
+      color: var(--dark-color);
+      font-weight: 600;
+      font-size: 5.5rem;
+    }
+
+    #testimonial h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+
+    #testimonial .testi_info {
+      margin-top: 8rem;
+      box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.1),
+        -8px 10px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* DESIGN SECTION */
+    #design .design_bg {
+      background: linear-gradient(to bottom, rgb(0 0 0 / 75%), rgb(0 0 0 / 71%)),
+        url(aboutimg/design.jpg) no-repeat fixed;
+      height: 300px;
+      background-size: cover;
+      width: 100%;
+      display: table;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: var(--white-color);
+    }
+
+    #design .design_bg h3 {
+      padding-top: 15px;
+      font-size: 2rem;
+    }
+
+    #design .design_bg i {
+      font-size: 5rem;
+      color: var(--white-color);
+      transition: 600ms;
+    }
+
+    #design .design_bg i:hover {
+      color: var(--primary-color);
+    }
+
+    /* TRAINERS */
+    #trainers {
+      background-color: var(--white-color);
+    }
+
+    /* FOOTER */
+    #contact .footer_form {
+      border: 2px solid var(--white-color);
+    }
+    #contact form input::placeholder {
+      text-align: left;
+    }
+
+    /* MEDIA QUERY */
+    @media (max-width: 1024px) {
+      #aboutus h1 {
+        font-size: 5rem;
+      }
+
+      #aboutus h2 {
+        font-size: 2rem;
+      }
+
+      #aboutus p {
+        line-height: 1.6;
+      }
+
+      #aboutus .about_line {
+        margin-bottom: 5rem;
+      }
+    }
+
+    @media (max-width: 991px) {
+      #banner .banner_heading {
+        margin-top: 6rem;
+      }
+
+      #aboutus .about_line {
+        margin-bottom: 4rem;
+      }
+
+      #aboutus h1 {
+        font-size: 4.5rem;
+      }
+
+      #aboutus h2 {
+        font-size: 1.8rem;
+      }
+
+      #aboutus p {
+        line-height: 1.6;
+      }
+
+      #aboutus .about_info {
+        padding-top: 10rem;
+      }
+    }
+
+    @media (max-width: 575px) {
+      #banner h1 {
+        font-size: 3.5rem;
+      }
+
+      #banner h2 {
+        font-size: 1.9rem;
+      }
+
+      #banner .banner_heading {
+        margin-top: 6rem;
+      }
+
+      #aboutus .about_line {
+        margin-bottom: 4rem;
+      }
+
+      #aboutus h1 {
+        font-size: 3.5rem;
+      }
+
+      #aboutus h2 {
+        font-size: 1rem;
+      }
+
+      #aboutus p {
+        line-height: 1.6;
+        font-size: 0.8rem;
+      }
+
+      #aboutus .about_info {
+        padding-top: 8rem;
+      }
+
+      #aboutus .main-button {
+        width: 130px;
+        height: 55px;
+        font-size: 0.8rem;
+      }
+
+      #testimonial h1 {
+        font-size: 2.6rem;
+      }
+
+      #testimonial h2 {
+        font-size: 1.8rem;
+      }
+
+      #design .design_bg h3 {
+        font-size: 1.7rem;
+      }
+
+      #design .design_bg i {
+        font-size: 4rem;
+      }
+    }
+
+    @media (max-width: 430px) {
+      #aboutus .about_line {
+        margin-bottom: 1rem;
+      }
+
+      #aboutus h1 {
+        font-size: 3rem;
+      }
+
+      #aboutus h2 {
+        font-size: 1.2rem;
+      }
+
+      #aboutus p {
+        line-height: 1.8;
+        font-size: 0.8rem;
+      }
+
+      #aboutus .about_info {
+        padding-top: 8rem;
+      }
+
+      #aboutus .main-button {
+        width: 130px;
+        height: 55px;
+        font-size: 0.8rem;
+      }
+
+      #testimonial h1 {
+        font-size: 2.6rem;
+      }
+
+      #testimonial h2 {
+        font-size: 1.8rem;
+      }
+
+      #design .design_bg h3 {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      #aboutus {
+        margin-top: 3rem;
+      }
+
+      #aboutus .about_line {
+        margin-bottom: 1rem;
+      }
+
+      #aboutus h1 {
+        font-size: 3rem;
+      }
+
+      #aboutus h2 {
+        font-size: 1.2rem;
+      }
+
+      #aboutus p {
+        line-height: 1.6;
+        font-size: 0.8rem;
+      }
+
+      #aboutus .about_info {
+        padding-top: 8rem;
+      }
+
+      #aboutus .main-button {
+        width: 130px;
+        height: 55px;
+        font-size: 0.8rem;
+      }
+
+      #testimonial h1 {
+        font-size: 2.4rem;
+      }
+
+      #testimonial h2 {
+        font-size: 1.6rem;
+      }
+
+      #design .design_bg h3 {
+        font-size: 1rem;
+      }
+
+      #contact h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- HEADER -->
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <h1 class="fw-bolder text-light brand_name">FITNESS FIT</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#calisnavbar"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="calisnavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">COURSES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html"> BLOG </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" tabindex="-1"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- END OF HEADER -->
+
+    <!-- BANNER -->
+    <section id="banner">
+      <div class="container-fluid p-5 banner_bg">
+        <div class="row banner_heading">
+          <div
+            class="col-12 text-light text-center d-flex justify-content-center flex-column mt-5 align-items-center"
+          >
+            <h1>ABOUT US</h1>
+            <h2>BUILDING A COMMUNITY FOR ATHELETES</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF BANNER -->
+
+    <!-- ABOUT US -->
+    <section id="aboutus">
+      <div class="container p-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img
+              src="aboutimg/about.jpeg"
+              alt="About us"
+              class="img-fluid"
+              style="height: 500px; object-fit: cover"
+            />
+          </div>
+          <div class="col-md-6 text-light about_line">
+            <h1>ABOUT US</h1>
+            <p class="lead">
+              At the most basic level, "calisthenics is resistance training with
+              your own bodyweight," says Autumn Calabrese, Beachbody super
+              trainer and creator of 80 Day Obsession. It's designed to improve
+              strength, flexibility, agility, balance, coordination, and aerobic
+              conditioning-just about every skill you need to be a fit human
+              being.
+            </p>
+
+            <p class="lead d-xs-none">
+              "It is an art form of using your own bodyweight as a means to
+              maximize human power and athletic ability," says Tee Major, a U.S.
+              military fitness instructor and author of Urban Calisthenics. The
+              fundamental goal of calisthenics workouts should be mastering
+              control over lifting and moving your body in space, he says.
+            </p>
+
+            <p class="lead d-xs-none">
+              Squats, push-ups, lunges, crunches, dips, jumping jacks, broad
+              jumps, handstands-yep, all calisthenics.
+            </p>
+            <div class="row justify-content-center">
+              <a href="contact.html" type="button" class="main-button"
+                >CONTACT US</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,256L1440,64L1440,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- END OF ABOUT US -->
+
+    <!-- START OF TESTIMONIAL -->
+    <section id="testimonial">
+      <div class="container p-5">
+        <div class="row justify-content-center">
+          <div class="col text-start">
+            <h1>TESTIMONIAL</h1>
+            <h2>WHAT OUR CLIENTS SAYS</h2>
+          </div>
+        </div>
+        <div class="carousel slide" data-bs-ride="carousel" id="caliscarousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1800">
+              <div class="row justify-content-between px-5">
+                <div class="col-sm-5 testi_info">
+                  <div class="card border-0">
+                    <img
+                      src="aboutimg/pic2.jpg"
+                      alt="Review one"
+                      class="img-fluid"
+                      style="
+                        height: 120px;
+                        width: 120px;
+                        border: 3px solid var(--primary-color);
+                        border-radius: 50%;
+                        margin: auto;
+                        transform: translateY(-70px);
+                        object-fit: cover;
+                      "
+                    />
+                    <div class="card-body text-center">
+                      <div class="card-title">
+                        <h3>JAMES CARLOS</h3>
+                      </div>
+                      <div class="card-text">
+                        <p>
+                          Training with the body wieght is the best feeling ever
+                          and the schedule taht you've given works perfect !!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-5 testi_info">
+                  <div class="card border-0">
+                    <img
+                      src="aboutimg/pic3.jpg"
+                      alt="Review two"
+                      class="img-fluid"
+                      style="
+                        height: 120px;
+                        width: 120px;
+                        border: 3px solid var(--primary-color);
+                        border-radius: 50%;
+                        margin: auto;
+                        transform: translateY(-70px);
+                        object-fit: cover;
+                      "
+                    />
+                    <div class="card-body text-center">
+                      <div class="card-title">
+                        <h3>EMMA WATSON</h3>
+                      </div>
+                      <div class="card-text">
+                        <p>
+                          Training with the body wieght is the best feeling ever
+                          and the schedule taht you've given works perfect !!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1800">
+              <div class="row justify-content-between px-5">
+                <div class="col-sm-5 testi_info">
+                  <div class="card border-0">
+                    <img
+                      src="aboutimg/pic4.jpg"
+                      alt="Review three"
+                      class="img-fluid"
+                      style="
+                        height: 120px;
+                        width: 120px;
+                        border: 3px solid var(--primary-color);
+                        border-radius: 50%;
+                        margin: auto;
+                        transform: translateY(-70px);
+                        object-fit: cover;
+                      "
+                    />
+                    <div class="card-body text-center">
+                      <div class="card-title">
+                        <h3>RONNEY TALE</h3>
+                      </div>
+                      <div class="card-text">
+                        <p>
+                          Training with the body wieght is the best feeling ever
+                          and the schedule taht you've given works perfect !!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-5 testi_info">
+                  <div class="card border-0">
+                    <img
+                      src="aboutimg/pic5.jpg"
+                      alt="Review four"
+                      class="img-fluid"
+                      style="
+                        height: 120px;
+                        width: 120px;
+                        border: 3px solid var(--primary-color);
+                        border-radius: 50%;
+                        margin: auto;
+                        transform: translateY(-70px);
+                        object-fit: cover;
+                      "
+                    />
+                    <div class="card-body text-center">
+                      <div class="card-title">
+                        <h3>DAVID WATSON</h3>
+                      </div>
+                      <div class="card-text">
+                        <p>
+                          Training with the body wieght is the best feeling ever
+                          and the schedule taht you've given works perfect !!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#caliscarousel"
+            data-bs-slide="prev"
+          ></button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#caliscarousel"
+            data-bs-slide="next"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIAL -->
+
+    <!-- BANNER SECTION -->
+    <section id="design">
+      <div class="container-fluid design_bg">
+        <div class="row">
+          <div class="col-12">
+            <a href="https://youtu.be/fpK5VZCwJPY">
+              <i class="fa fa-youtube-play"></i>
+            </a>
+            <h3>CLICK THERE TO WATCH MORNING ROUTINE</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF DESIGN SECTION -->
+
+    <!-- TRAINERS -->
+    <section id="trainers">
+      <div class="container p-5">
+        <div class="row justify-content-center text-center py-5">
+          <div class="col-12">
+            <h1 class="text-dark">OUR <span>TRAINERS</span></h1>
+            <h2 class="text-dark">BEST TRAINERS AROUND THE WORLD</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center mb-5 g-4">
+          <div class="col-sm-5">
+            <img
+              src="aboutimg/Chris-Heria-Wiki.jpeg"
+              alt="Chris Heria"
+              class="img-fluid"
+              style="
+                height: 480px;
+                clip-path: polygon(20% 0, 100% 0%, 79% 98%, 0% 100%);
+              "
+            />
+          </div>
+          <div class="col-sm-5">
+            <h1 class="text-dark pb-4">CHRIS HERIA</h1>
+            <p>
+              Chris represented his country in Street Workout World
+              Championship. He is a <strong>self-trained</strong> fitness
+              trainer who is a member of a famous workout team named BarStarzz.
+              He emboldens people to be fit and fine through his various
+              workshops, seminar, and Youtube videos. He also has a personal
+              gym. He has more than 43 thousand followers on Facebook, more than
+              1 million followers on Instagram and thousands of followers on
+              Twitter. He is a celebrity in the fitness world.
+            </p>
+            <p>
+              He is also a Pro Bar <strong>Athlete</strong> and
+              <strong>Certified</strong> Personal Trainer who participate in a
+              bar athlete competition across the country. He has made Training
+              centers, fitness academy in order to train people and make them
+              realize the importance of fitness in life.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center my-5">
+          <div class="col-sm-5">
+            <h1 class="text-dark pb-4">FRANK MEDRANO</h1>
+            <p>
+              Frank is an active user of social media. He constantly shares his
+              training routine and <strong>motivational</strong> quotes with his
+              followers, and motivates others with pictures of his awesome
+              physique.
+            </p>
+            <p>
+              Frank Medrano wasn’t always passionate about sports. According to
+              the athlete, he lived a “normal life” up until 30. During this
+              period of time, he had several problems with his health due to
+              excessive weight; he always felt tired, slow and weak. Year after
+              year, Frank started to gain more weight. Not being happy with his
+              looks, and his health. He decided to get lean and gain muscle
+              After watching numerous workout videos online, Frank decided to
+              make a positive change in his life.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="aboutimg/frankm.jpeg"
+              alt="Frank Medrano"
+              class="img-fluid"
+              style="
+                height: 480px;
+                clip-path: polygon(20% 0, 100% 0%, 79% 98%, 0% 100%);
+              "
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center text-center mb-5 g-4">
+          <div class="col-md-5">
+            <img
+              src="aboutimg/andrea-larosa.jpeg"
+              alt="Ander Larosa"
+              class="img-fluid"
+              style="
+                height: 480px;
+                clip-path: polygon(20% 0, 100% 0%, 79% 98%, 0% 100%);
+              "
+            />
+          </div>
+          <div class="col-md-5">
+            <h1 class="text-dark pb-4">ANDER LAROSA</h1>
+            <p>
+              Fitness trainer and social media personality recognized for being
+              a <strong>6x international</strong> calisthenics champion. He is
+              best known for his street workout routines and he has more than
+              360,000 subscribers on YouTube.
+            </p>
+            <p>
+              He launched his social media career with the 2013 video "STREET
+              WORKOUT Motivation! Song: Remember the name! In 2017, he had the
+              opportunity to compete on the reality television show Italia's Got
+              Talent.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF TRAINER SECTION -->
+
+    <!-- FOOTER -->
+    <section id="contact">
+      <div class="container pt-5 px-5">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h1>FITNESS FIT</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-5" style="position: relative;">
+              <form>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control footer_form position-relative"
+                  placeholder="Enter Your Email"
+                />
+            </form>
+            <a href="#" class="icon_inside" style="position: absolute; right: 0; top: 50%; padding-right: 30px; transform: translateY(-50%); color: #000"><i class="fa fa-long-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center p-5">
+          <div class="col-12 text-center text-light">
+            <p>&copy; FITNESS FIT. ALL RIGHTS RESERVED</p>
+          </div>
+          <div class="col-12 text-center text-light">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#banner">
+        <i class="fa fa-angle-double-up icon"></i>
+      </a>
+    </section>
+    <!-- END OF FOOTER -->
+
+    <!--BOOTSTRAP JS LINK  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom Script -->
+
+    <script type="text/javascript">
+      $(window).on("scroll", () => {
+        if ($(window).scrollTop() > 100) {
+          $("nav").addClass("scroll");
+        } else {
+          $("nav").removeClass("scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
